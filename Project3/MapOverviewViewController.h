@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "Listing.h"
+#import "DataManager.h"
 
-@interface MapOverviewViewController : UIViewController
-
+@interface MapOverviewViewController : UIViewController <MKMapViewDelegate>
+{
+IBOutlet MKMapView *businessMapView;
+}
 @end

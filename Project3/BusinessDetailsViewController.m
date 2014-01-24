@@ -9,6 +9,10 @@
 #import "BusinessDetailsViewController.h"
 
 @interface BusinessDetailsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *latLabel;
+@property (weak, nonatomic) IBOutlet UILabel *logLabel;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -27,6 +31,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.nameLabel.text = self.businessName;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    //Remove all pins so if items were deleted from DataManager, they are removed from map
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

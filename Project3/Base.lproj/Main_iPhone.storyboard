@@ -128,6 +128,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="egI-ww-3Ee"/>
+                    <connections>
+                        <outlet property="latLabel" destination="cUx-bz-4JM" id="GdO-TK-5r3"/>
+                        <outlet property="logLabel" destination="Or3-oP-XNl" id="xOf-h0-9YH"/>
+                        <outlet property="mapView" destination="4iG-uI-6Kh" id="fE1-CF-lZT"/>
+                        <outlet property="nameLabel" destination="bcg-yh-b3x" id="KB2-Hc-cVI"/>
+                        <outlet property="nameLable" destination="bcg-yh-b3x" id="cwP-H0-mDL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rr-7r-3Tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,11 +155,17 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sF8-s7-cTI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4WF-hi-vmg" id="Elf-yo-YVX"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="cA6-nE-L8h"/>
+                    <connections>
+                        <outlet property="businessMapView" destination="sF8-s7-cTI" id="wIQ-qA-gdD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7g-OO-Ekd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

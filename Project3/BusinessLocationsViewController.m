@@ -196,16 +196,24 @@
  }
  */
 
-/*
  #pragma mark - Navigation
  
  // In a story board-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     DataManager *manager = [DataManager sharedBusManager];
+     if (manager != nil)
+     {
+         // Get the new view controller using [segue destinationViewController].
+         BusinessDetailsViewController *dvc = [segue destinationViewController];
+         // Pass the selected object to the new view controller.
+         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+         Listing *c = [manager.businesses objectAtIndex:path.row];
+         //[dvc currentBusiness:c];
+         dvc.businessName = c.businessName;
+         dvc.subName = c.subName;
+         dvc.businessLoc = c.businessLoc;
+     }
  }
- 
- */
 
 @end

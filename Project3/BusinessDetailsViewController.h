@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "Listing.h"
+#import "DataManager.h"
 
 @interface BusinessDetailsViewController : UIViewController
+
+@property (nonatomic, strong) NSString *businessName;
+@property (nonatomic, strong)NSString *subName;
+@property (nonatomic, assign) CLLocationCoordinate2D businessLoc;
 
 @end

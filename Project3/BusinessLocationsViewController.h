@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "BusinessDetailsViewController.h"
 #import "Listing.h"
 #import "DataManager.h"
 
