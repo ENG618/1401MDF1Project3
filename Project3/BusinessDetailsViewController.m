@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.nameLabel.text = [NSString stringWithFormat:@"%@", self.businessName];
+    self.nameLabel.text = self.businessName;
     self.latLabel.text = [NSString stringWithFormat:@"%g", self.businessLoc.latitude];
     self.logLabel.text = [NSString stringWithFormat:@"%g", self.businessLoc.longitude];
     
@@ -46,10 +46,6 @@
     zoom.latitudeDelta = 0.50f;
     zoom.longitudeDelta = 0.50f;
     [businessMapView setRegion:MKCoordinateRegionMake(centerMap, zoom)animated:YES];
-
-    
-    
-    
     
 }
 

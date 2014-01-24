@@ -96,8 +96,8 @@
                                     <outlet property="delegate" destination="JQ5-PE-lf2" id="kR1-fh-vSf"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-yh-b3x">
-                                <rect key="frame" x="139" y="411" width="33" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-yh-b3x">
+                                <rect key="frame" x="20" y="411" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -110,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or3-oP-XNl">
-                                <rect key="frame" x="170" y="489" width="130" height="21"/>
+                                <rect key="frame" x="161" y="489" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -122,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0d-ou-bn3">
-                                <rect key="frame" x="170" y="460" width="77" height="21"/>
+                                <rect key="frame" x="161" y="460" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -132,12 +132,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="egI-ww-3Ee"/>
                     <connections>
-                        <outlet property="businessMapView" destination="4iG-uI-6Kh" id="e8P-5v-Llr"/>
+                        <outlet property="businessMapView" destination="4iG-uI-6Kh" id="SOF-MG-C2R"/>
                         <outlet property="latLabel" destination="cUx-bz-4JM" id="GdO-TK-5r3"/>
                         <outlet property="logLabel" destination="Or3-oP-XNl" id="xOf-h0-9YH"/>
-                        <outlet property="mapView" destination="4iG-uI-6Kh" id="fE1-CF-lZT"/>
                         <outlet property="nameLabel" destination="bcg-yh-b3x" id="KB2-Hc-cVI"/>
-                        <outlet property="nameLable" destination="bcg-yh-b3x" id="cwP-H0-mDL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rr-7r-3Tt" userLabel="First Responder" sceneMemberID="firstResponder"/>

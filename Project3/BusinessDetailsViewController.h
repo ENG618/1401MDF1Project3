@@ -19,5 +19,6 @@
 @property (nonatomic, strong) NSString *businessName;
 @property (nonatomic, strong)NSString *subName;
 @property (nonatomic, assign) CLLocationCoordinate2D businessLoc;
+//@property (nonatomic, retain) IBOutlet MKMapView *businessMapView;
 
 @end
