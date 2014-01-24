@@ -28,16 +28,16 @@
 {
     [super viewDidLoad];
     
-    Listing *listing = [[Listing alloc] initWithName:@"GE Mobile Headquarters" subName:@"Where it all started" loc:CLLocationCoordinate2DMake(28.4983f, -81.377267f)];
-    Listing *listing1 = [[Listing alloc] initWithName:@"GE Mobile Outlet 1" subName:@"Our 1st outlet" loc:CLLocationCoordinate2DMake(28.663933f, -81.358567f)];
-    Listing *listing2 = [[Listing alloc] initWithName:@"GE Mobile Outlet 2" subName:@"Our 2nd outlet" loc:CLLocationCoordinate2DMake(28.642817f, -81.339517f)];
-    Listing *listing3 = [[Listing alloc] initWithName:@"GE Mobile Outlet 3" subName:@"Our 3rd outlet" loc:CLLocationCoordinate2DMake(28.647683f, -81.279567f)];
-    Listing *listing4 = [[Listing alloc] initWithName:@"GE Mobile Outlet 4" subName:@"Our 4th outlet" loc:CLLocationCoordinate2DMake(28.697617f, -81.34625f)];
-    Listing *listing5 = [[Listing alloc] initWithName:@"GE Mobile Outlet 5" subName:@"Our 5th outlet" loc:CLLocationCoordinate2DMake(28.691f, -81.38825f)];
-    Listing *listing6 = [[Listing alloc] initWithName:@"GE Mobile Outlet 6" subName:@"Our 6th outlet" loc:CLLocationCoordinate2DMake(28.660633f, -81.342317f)];
-    Listing *listing7 = [[Listing alloc] initWithName:@"GE Mobile Outlet 7" subName:@"Our 7th outlet" loc:CLLocationCoordinate2DMake(28.6455f, -81.267917f)];
-    Listing *listing8 = [[Listing alloc] initWithName:@"GE Mobile Outlet 8" subName:@"Our 8th outlet" loc:CLLocationCoordinate2DMake(28.6253f, -81.315867f)];
-    Listing *listing9 = [[Listing alloc] initWithName:@"GE Mobile Outlet 9" subName:@"Our 9th outlet" loc:CLLocationCoordinate2DMake(28.627233f, -81.36345f)];
+    Listing *listing = [[Listing alloc] initWithName:@"GEBG" subName:@"Corpret Headquarters" loc:CLLocationCoordinate2DMake(28.4983f, -81.377267f)];
+    Listing *listing1 = [[Listing alloc] initWithName:@"GE Mobile Devision" subName:@"Mobile Devision" loc:CLLocationCoordinate2DMake(28.663933f, -81.358567f)];
+    Listing *listing2 = [[Listing alloc] initWithName:@"GE Customer Service" subName:@"Taking care of customers" loc:CLLocationCoordinate2DMake(28.642817f, -81.339517f)];
+    Listing *listing3 = [[Listing alloc] initWithName:@"GE Retailer" subName:@"1st Retail outlet" loc:CLLocationCoordinate2DMake(28.647683f, -81.279567f)];
+    Listing *listing4 = [[Listing alloc] initWithName:@"GE Real Estate" subName:@"Realtor Devision" loc:CLLocationCoordinate2DMake(28.697617f, -81.34625f)];
+    Listing *listing5 = [[Listing alloc] initWithName:@"GE Property Managment" subName:@"Managment Devision" loc:CLLocationCoordinate2DMake(28.691f, -81.38825f)];
+    Listing *listing6 = [[Listing alloc] initWithName:@"GE Distribution Center" subName:@"Central Warehouse" loc:CLLocationCoordinate2DMake(28.660633f, -81.342317f)];
+    Listing *listing7 = [[Listing alloc] initWithName:@"GE Private Residence" subName:@"CEO House" loc:CLLocationCoordinate2DMake(28.6455f, -81.267917f)];
+    Listing *listing8 = [[Listing alloc] initWithName:@"GE Farm" subName:@"Land for the animals" loc:CLLocationCoordinate2DMake(28.6253f, -81.315867f)];
+    Listing *listing9 = [[Listing alloc] initWithName:@"GE Garage" subName:@"Vehicle storage facility" loc:CLLocationCoordinate2DMake(28.627233f, -81.36345f)];
     
     //Creating instance of singleton
     DataManager *manager = [DataManager sharedBusManager];
