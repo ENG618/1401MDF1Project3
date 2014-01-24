@@ -205,14 +205,16 @@
      if (manager != nil)
      {
          // Get the new view controller using [segue destinationViewController].
-         BusinessDetailsViewController *dvc = [segue destinationViewController];
+         BusinessDetailsViewController *detailVC = [segue destinationViewController];
          // Pass the selected object to the new view controller.
+         //Obtain selected row
          NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+         //NSIndexPath *path = [self.tableView indexPathForSelectedRow];
          Listing *c = [manager.businesses objectAtIndex:path.row];
          //[dvc currentBusiness:c];
-         dvc.businessName = c.businessName;
-         dvc.subName = c.subName;
-         dvc.businessLoc = c.businessLoc;
+         detailVC.businessName = c.businessName;
+         detailVC.subName = c.subName;
+         detailVC.businessLoc = c.businessLoc;
      }
  }
 

@@ -11,7 +11,10 @@
 #import "Listing.h"
 #import "DataManager.h"
 
-@interface BusinessDetailsViewController : UIViewController
+@interface BusinessDetailsViewController : UIViewController <MKMapViewDelegate>
+{
+    IBOutlet MKMapView *businessMapView;
+}
 
 @property (nonatomic, strong) NSString *businessName;
 @property (nonatomic, strong)NSString *subName;

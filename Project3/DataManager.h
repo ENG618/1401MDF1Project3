@@ -11,8 +11,6 @@
 @interface DataManager : NSObject
 {
     NSMutableArray *businesses;
-    //Set flag to YES if array is modigied to refresh MapView
-    BOOL flag;
 }
 
 //Static method

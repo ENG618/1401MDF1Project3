@@ -56,7 +56,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="JQ5-PE-lf2" kind="push" id="XJB-g3-gvH"/>
+                                    <segue destination="JQ5-PE-lf2" kind="push" id="jgE-6C-p03"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -92,6 +92,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4iG-uI-6Kh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="403"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JQ5-PE-lf2" id="kR1-fh-vSf"/>
+                                </connections>
                             </mapView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-yh-b3x">
                                 <rect key="frame" x="139" y="411" width="33" height="21"/>
@@ -129,6 +132,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="egI-ww-3Ee"/>
                     <connections>
+                        <outlet property="businessMapView" destination="4iG-uI-6Kh" id="e8P-5v-Llr"/>
                         <outlet property="latLabel" destination="cUx-bz-4JM" id="GdO-TK-5r3"/>
                         <outlet property="logLabel" destination="Or3-oP-XNl" id="xOf-h0-9YH"/>
                         <outlet property="mapView" destination="4iG-uI-6Kh" id="fE1-CF-lZT"/>
@@ -152,7 +156,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sF8-s7-cTI">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sF8-s7-cTI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>

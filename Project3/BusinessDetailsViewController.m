@@ -12,7 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *latLabel;
 @property (weak, nonatomic) IBOutlet UILabel *logLabel;
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -31,13 +30,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.nameLabel.text = self.businessName;
+    self.nameLabel.text = [NSString stringWithFormat:@"%@", self.businessName];
+    self.latLabel.text = [NSString stringWithFormat:@"%g", self.businessLoc.latitude];
+    self.logLabel.text = [NSString stringWithFormat:@"%g", self.businessLoc.longitude];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    //Remove all pins so if items were deleted from DataManager, they are removed from map
-    [self.mapView removeAnnotations:self.mapView.annotations];
+    
+    //Center of map
+    CLLocationCoordinate2D centerMap = self.businessLoc;
+    //Zoom level
+    MKCoordinateSpan zoom;
+    zoom.latitudeDelta = 0.50f;
+    zoom.longitudeDelta = 0.50f;
+    [businessMapView setRegion:MKCoordinateRegionMake(centerMap, zoom)animated:YES];
+
     
     
     
