@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapOverviewViewController.h
 //  Project3
 //
 //  Created by Eric Garcia on 1/23/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MapOverviewViewController : UIViewController
 
 @end

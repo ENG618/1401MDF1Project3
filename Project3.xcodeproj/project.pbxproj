@@ -15,13 +15,18 @@
 		5CF821F818921547005E2438 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF821F718921547005E2438 /* AppDelegate.m */; };
 		5CF821FB18921547005E2438 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF821F918921547005E2438 /* Main_iPhone.storyboard */; };
 		5CF821FE18921547005E2438 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF821FC18921547005E2438 /* Main_iPad.storyboard */; };
-		5CF8220118921547005E2438 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8220018921547005E2438 /* ViewController.m */; };
 		5CF8220318921547005E2438 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF8220218921547005E2438 /* Images.xcassets */; };
 		5CF8220A18921547005E2438 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF8220918921547005E2438 /* XCTest.framework */; };
 		5CF8220B18921547005E2438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF821E718921547005E2438 /* Foundation.framework */; };
 		5CF8220C18921547005E2438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF821EB18921547005E2438 /* UIKit.framework */; };
 		5CF8221418921547005E2438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CF8221218921547005E2438 /* InfoPlist.strings */; };
 		5CF8221618921547005E2438 /* Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8221518921547005E2438 /* Project3Tests.m */; };
+		5CF82220189215C6005E2438 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF8221F189215C6005E2438 /* MapKit.framework */; };
+		5CF822231892176F005E2438 /* BusinessLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF822221892176F005E2438 /* BusinessLocationsViewController.m */; };
+		5CF82229189217AD005E2438 /* MapOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF82228189217AD005E2438 /* MapOverviewViewController.m */; };
+		5CF8222C189217C1005E2438 /* BusinessDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8222B189217C1005E2438 /* BusinessDetailsViewController.m */; };
+		5CF8223118921802005E2438 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8223018921802005E2438 /* DataManager.m */; };
+		5CF8223418921822005E2438 /* Listing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8223318921822005E2438 /* Listing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +52,23 @@
 		5CF821F718921547005E2438 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5CF821FA18921547005E2438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5CF821FD18921547005E2438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		5CF821FF18921547005E2438 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5CF8220018921547005E2438 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5CF8220218921547005E2438 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5CF8220818921547005E2438 /* Project3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF8220918921547005E2438 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5CF8221118921547005E2438 /* Project3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Project3Tests-Info.plist"; sourceTree = "<group>"; };
 		5CF8221318921547005E2438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5CF8221518921547005E2438 /* Project3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project3Tests.m; sourceTree = "<group>"; };
+		5CF8221F189215C6005E2438 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5CF822211892176F005E2438 /* BusinessLocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessLocationsViewController.h; sourceTree = "<group>"; };
+		5CF822221892176F005E2438 /* BusinessLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessLocationsViewController.m; sourceTree = "<group>"; };
+		5CF82227189217AD005E2438 /* MapOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverviewViewController.h; sourceTree = "<group>"; };
+		5CF82228189217AD005E2438 /* MapOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverviewViewController.m; sourceTree = "<group>"; };
+		5CF8222A189217C1005E2438 /* BusinessDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailsViewController.h; sourceTree = "<group>"; };
+		5CF8222B189217C1005E2438 /* BusinessDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailsViewController.m; sourceTree = "<group>"; };
+		5CF8222F18921802005E2438 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		5CF8223018921802005E2438 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		5CF8223218921822005E2438 /* Listing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listing.h; sourceTree = "<group>"; };
+		5CF8223318921822005E2438 /* Listing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF82220189215C6005E2438 /* MapKit.framework in Frameworks */,
 				5CF821EA18921547005E2438 /* CoreGraphics.framework in Frameworks */,
 				5CF821EC18921547005E2438 /* UIKit.framework in Frameworks */,
 				5CF821E818921547005E2438 /* Foundation.framework in Frameworks */,
@@ -103,6 +118,7 @@
 		5CF821E618921547005E2438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CF8221F189215C6005E2438 /* MapKit.framework */,
 				5CF821E718921547005E2438 /* Foundation.framework */,
 				5CF821E918921547005E2438 /* CoreGraphics.framework */,
 				5CF821EB18921547005E2438 /* UIKit.framework */,
@@ -116,10 +132,11 @@
 			children = (
 				5CF821F618921547005E2438 /* AppDelegate.h */,
 				5CF821F718921547005E2438 /* AppDelegate.m */,
+				5CF8222D189217CF005E2438 /* Locations Tab */,
+				5CF8222E189217DC005E2438 /* Maps Tab */,
+				5CF8223518921828005E2438 /* Custom Objects */,
 				5CF821F918921547005E2438 /* Main_iPhone.storyboard */,
 				5CF821FC18921547005E2438 /* Main_iPad.storyboard */,
-				5CF821FF18921547005E2438 /* ViewController.h */,
-				5CF8220018921547005E2438 /* ViewController.m */,
 				5CF8220218921547005E2438 /* Images.xcassets */,
 				5CF821EE18921547005E2438 /* Supporting Files */,
 			);
@@ -153,6 +170,37 @@
 				5CF8221218921547005E2438 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CF8222D189217CF005E2438 /* Locations Tab */ = {
+			isa = PBXGroup;
+			children = (
+				5CF822211892176F005E2438 /* BusinessLocationsViewController.h */,
+				5CF822221892176F005E2438 /* BusinessLocationsViewController.m */,
+				5CF8222A189217C1005E2438 /* BusinessDetailsViewController.h */,
+				5CF8222B189217C1005E2438 /* BusinessDetailsViewController.m */,
+			);
+			name = "Locations Tab";
+			sourceTree = "<group>";
+		};
+		5CF8222E189217DC005E2438 /* Maps Tab */ = {
+			isa = PBXGroup;
+			children = (
+				5CF82227189217AD005E2438 /* MapOverviewViewController.h */,
+				5CF82228189217AD005E2438 /* MapOverviewViewController.m */,
+			);
+			name = "Maps Tab";
+			sourceTree = "<group>";
+		};
+		5CF8223518921828005E2438 /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5CF8223218921822005E2438 /* Listing.h */,
+				5CF8223318921822005E2438 /* Listing.m */,
+				5CF8222F18921802005E2438 /* DataManager.h */,
+				5CF8223018921802005E2438 /* DataManager.m */,
+			);
+			name = "Custom Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CF8220118921547005E2438 /* ViewController.m in Sources */,
 				5CF821F818921547005E2438 /* AppDelegate.m in Sources */,
+				5CF8223418921822005E2438 /* Listing.m in Sources */,
+				5CF8223118921802005E2438 /* DataManager.m in Sources */,
+				5CF8222C189217C1005E2438 /* BusinessDetailsViewController.m in Sources */,
+				5CF822231892176F005E2438 /* BusinessLocationsViewController.m in Sources */,
+				5CF82229189217AD005E2438 /* MapOverviewViewController.m in Sources */,
 				5CF821F418921547005E2438 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
