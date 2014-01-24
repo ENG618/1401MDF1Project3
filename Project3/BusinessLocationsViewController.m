@@ -201,6 +201,7 @@
  // In a story board-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
+    //Creating instance of singleton     
      DataManager *manager = [DataManager sharedBusManager];
      if (manager != nil)
      {
@@ -216,18 +217,6 @@
          detailVC.subName = c.subName;
          detailVC.businessLoc = c.businessLoc;
      }
-/*
-     BusinessDetailsViewController *dvc = [segue destinationViewController];
-     if (dvc != nil) {
-         //UITableViewCell *cCell = (UITableViewCell*)sender;
-         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-         
-         Listing *c = [manager.businesses objectAtIndex:path.row];
-         dvc.businessName = c.businessName;
-         dvc.subName = c.subName;
-         dvc.businessLoc = c.businessLoc;
-     }
-*/
  }
 
 @end

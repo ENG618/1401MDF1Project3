@@ -34,6 +34,16 @@
     self.latLabel.text = [NSString stringWithFormat:@"%g", self.businessLoc.latitude];
     self.logLabel.text = [NSString stringWithFormat:@"%g", self.businessLoc.longitude];
     
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    annotation.title = self.businessName;
+    annotation.subtitle = self.subName;
+    CLLocationCoordinate2D location = CLLocationCoordinate2DMake(self.businessLoc.latitude, self.businessLoc.longitude);
+    annotation.coordinate = location;
+    
+    
+    //Add pins to mapView
+    [businessMapView addAnnotation:annotation];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -43,10 +53,26 @@
     CLLocationCoordinate2D centerMap = self.businessLoc;
     //Zoom level
     MKCoordinateSpan zoom;
-    zoom.latitudeDelta = 0.50f;
-    zoom.longitudeDelta = 0.50f;
+    zoom.latitudeDelta = 0.10f;
+    zoom.longitudeDelta = 0.10f;
     [businessMapView setRegion:MKCoordinateRegionMake(centerMap, zoom)animated:YES];
     
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation;
+{
+    
+    //Checks for existing pin annotation view
+    MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinID"];
+    if (pinAnnotationView == nil) {
+        //Creates a new pin annotation view if one cannot be reused
+        pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pinID"];
+        pinAnnotationView.pinColor =MKPinAnnotationColorGreen;
+        pinAnnotationView.canShowCallout = YES;
+        pinAnnotationView.animatesDrop = YES;
+    }
+    //Display the pin annotation view
+    return pinAnnotationView;
 }
 
 - (void)didReceiveMemoryWarning
